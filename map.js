@@ -108,3 +108,25 @@ function checkAnswer() {
     alert("Wrong! Try again.");
   }
 }
+
+function playAgain() {
+  // Reset lại các biến và trạng thái trò chơi
+  countriesGuessed = 0;
+  
+  // Ẩn thông báo kết quả
+  document.getElementById("resultMessage").classList.remove("show");
+  
+  // Reset màu sắc của các quốc gia
+  document.querySelectorAll(".allPaths").forEach(e => {
+    e.style.fill = "#ececec"; // Đặt lại màu cho các quốc gia
+  });
+
+  // Xóa ô nhập liệu
+  document.getElementById("countryInput").value = '';
+
+  // Chọn lại quốc gia ngẫu nhiên
+  selectRandomCountry();
+  
+  // Ẩn tên quốc gia
+  document.getElementById("name").style.opacity = 0;
+}
