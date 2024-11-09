@@ -8,13 +8,9 @@
     <title>World Map</title>
     <script src="https://kit.fontawesome.com/37d6505749.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="map.css">
-
 </head>
 
 <body id="body">
-
-    <?xml version="1.0"?>
-
     <div id="name">
         <p id="namep">Name</p>
     </div>
@@ -1548,18 +1544,19 @@
         <circle cx="1798.2" cy="719.3" id="2">
         </circle>
     </svg>
-    </div>
+</div>
     
-    <div id="inputSection">
-        <input type="text" id="countryInput" placeholder="Enter country name" />
-        <button onclick="checkAnswer()">Check Answer</button>
-    </div>
-    <div id="resultMessage" style="visibility: hidden;"></div>
+<div id="inputSection">
+    <input type="text" id="countryInput" placeholder="Enter country name">
+    <button onclick="checkAnswer()">Check Answer</button>
+  </div>  
+  <div id="resultMessage" class="result-message">
+    <h2 id="resultText">Congratulations! You completed the game!</h2>
+  </div>
+  
+  
 
-    <script src="map.js"></script>
-    
+<script src="map.js"></script>
 </body>
-
-
 
 </html>
