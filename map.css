@@ -38,16 +38,21 @@ svg path {
   height: 100%;
   cursor: grab; 
 }
-
 #inputSection {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px; /* Đưa phần tử xuống dưới cùng của màn hình */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translateX(-50%); /* Căn chính xác theo chiều ngang */
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
+
+
 
 #countryInput {
   padding: 5px;
@@ -101,29 +106,3 @@ button {
 #resultMessage.show {
   display: block; /* Hiển thị thông báo */
 }
-
-.play-again-button {
-  margin-top: 13px;
-  padding: 10px 20px;
-  margin-left: 180px;
-  font-size: 18px;
-  color: white;
-  background-color: #28a745; /* Màu xanh lá cây */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.play-again-button:hover {
-  background-color: #218838; /* Màu xanh đậm hơn khi hover */
-}
-
-.play-again-button:active {
-  background-color: #1e7e34; /* Màu xanh tối khi nhấn */
-}
-
-
-
-
-
